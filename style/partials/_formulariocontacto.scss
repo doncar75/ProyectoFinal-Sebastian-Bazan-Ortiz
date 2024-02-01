@@ -1,0 +1,88 @@
+
+
+.content {
+    max-width: 100%;
+    
+    .logos {
+        text-align: center;
+        font-size: 2.25rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: underline;
+        text-shadow: 3px 3px 4px green;
+    }
+    
+    .contact-wrapper {
+        box-shadow: 0 0 1.25rem 0 rgba(88, 54, 138, 0.464);
+
+        .contact-form form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .block {
+                grid-column: 1 / 3;
+            }
+            p {
+                margin: 0;
+                padding: 1rem;
+            }
+
+            button,
+            input,
+            textarea {
+                width: 100%;
+                padding: .7rem;
+                border: none;
+            }
+
+            button {
+                background: rgb(165, 148, 243);
+            
+            }
+
+        }
+
+        .info-contacto {
+            background-color: rgb(44, 87, 72);
+            color: white;
+            font-size: 1.4rem;
+        }
+        .info-contacto h2,
+        .info-contacto ul,
+        .info-contacto p {
+            text-align: center;
+    
+        }
+
+        .info-contacto ul{
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-contacto ul li {
+            padding: .3rem;
+        }
+
+        & > *{
+            padding: 2rem;
+        }
+    }
+}
+
+@media(min-width: 750px) {
+    body {
+        padding: 0 4em;
+    }
+    
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h2,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+}
